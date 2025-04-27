@@ -5,17 +5,15 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import OrderModal from './components/OrderModal';
 import OrdersPage from './components/OrdersPage';
-import Cart from './components/Cart';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import LandingSection from './components/LandingSection';
 import DynamicImageSlider from './components/DynamicImageSlider';
 import OurServices from './components/OurServices';
 import HowWeWork from './components/HowWeWork';
 import Login from './components/Login';
 import logo from './images/Nk_log.png';
-import { Button, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
+import { EMAIL, FULL_ADDRESS, PHONE_NUMBER, WHATSAPP_PHONE_NUMBER } from './constant';
 // import { useNavigate } from 'react-router-dom';
 
 function App() {
@@ -111,35 +109,7 @@ function App() {
               <OurServices />
               <HowWeWork />
               <div className="container text-center home-page-image">
-                {/* Other content */}
-                <div id="contact-section" ref={contactSectionRef} className="contact-section d-flex flex-wrap" >
-                  {/* Left Section */}
-                  <div className="contact-details col-md-6 text-center text-md-start">
-                    <img src={logo} alt="Logo" style={{ height: '100px', marginBottom: '20px' }} />
-                    <h2>Contact Us</h2>
-                    <p>Feel free to reach out to us at:</p>
-                    <p>
-                      <strong>Email:</strong> support@nklaundry.com
-                    </p>
-                    <p>
-                      <strong>Phone:</strong> +1-234-567-890
-                    </p>
-                  </div>
-
-                  {/* Right Section */}
-                  <div className="google-map col-md-6">
-                    <iframe
-                      title="NK Laundry Location"
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.41941548468132!3d37.77492927975971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f0b1c7b1%3A0x4c8b8b8b8b8b8b8b!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1616161616161!5m2!1sen!2sus"
-                      width="100%"
-                      height="300"
-                      style={{ border: 0 }}
-                      allowFullScreen=""
-                      loading="lazy"
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
+               
               <div id="about-section" className="about-section py-5" ref={aboutUsSectionRef}>
                 <h2>About Us</h2>
                 <p>
@@ -166,10 +136,39 @@ function App() {
                   peace of mind, all just a pickup away!
                 </p>
               </div>
+               {/* Other content */}
+               <div id="contact-section" ref={contactSectionRef} className="contact-section d-flex flex-wrap" >
+                  {/* Left Section */}
+                  <div className="contact-details col-md-6 text-center text-md-start">
+                    <img src={logo} alt="Logo" style={{ height: '100px', marginBottom: '20px' }} />
+                    <h2>Contact Us</h2>
+                    <p>Feel free to reach out to us at:</p>
+                    <p>
+                      <strong>Email:</strong> {EMAIL}
+                    </p>
+                    <p>
+                      <strong>Phone:</strong> {PHONE_NUMBER}
+                    </p>
+                    <p>
+                      <strong>Address:</strong> {FULL_ADDRESS}
+                    </p>
+                  </div>
+
+                  {/* Right Section */}
+                  <div className="google-map col-md-6">
+                    <iframe 
+                     title="NK Laundry Location"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3790.3613869316173!2d78.43190687516747!3d17.496743383409196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f8d2c1a70b%3A0xd08e18b24dbf3070!2sNK%20Laundry%20and%20Dry%20Cleaning!5e1!3m2!1sen!2sin!4v1745759419324!5m2!1sen!2sin" 
+                    width="100%" height="300" style={{ border: 0 }}
+                    allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="whatsapp-button">
               <a
-                href="https://wa.me/1234567890" // Replace with your WhatsApp number
+                href={`https://wa.me/${WHATSAPP_PHONE_NUMBER}`}  // Replace with your WhatsApp number
                 target="_blank"
                 rel="noopener noreferrer"
               >

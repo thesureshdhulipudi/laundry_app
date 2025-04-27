@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import './style/Header.css';
 import logo from '../images/Nk_log.png';
 import { ScrollLink } from 'react-scroll';
+import { EMAIL, PHONE_NUMBER, SHORT_ADDRESS } from '../constant';
 
 const Header = ({ onBookNow, onLoginNow, userDetails, onContactUsClick, onAboutUsClick  }) => {
 
@@ -19,12 +20,12 @@ const Header = ({ onBookNow, onLoginNow, userDetails, onContactUsClick, onAboutU
         <div className="brand-details">
           <div className="brand-name">NK Laundry</div>
           <div className="contact-info">
-            <span>Hyderabad</span>
+            <span>{SHORT_ADDRESS}</span>
             <span>
-              <strong>Phone:</strong> +1-234-567-890
+              <strong>Phone:</strong> {PHONE_NUMBER}
             </span>
             <span>
-              <strong>Email:</strong> support@nklaundry.com
+              <strong>Email:</strong> {EMAIL}
             </span>
           </div>
         </div>
