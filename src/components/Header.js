@@ -15,7 +15,7 @@ const Header = ({ onBookNow, onLoginNow, userDetails, onContactUsClick, onAboutU
 
   return (
     <Navbar bg="light" expand="lg" className="px-2">
-      <Navbar.Brand as={Link} to="/laundry_app" className="brand-container">
+      <Navbar.Brand as={Link} to="/" className="brand-container">
         <img src={logo} className="logo-img" alt="Logo" />
         <div className="brand-details">
           <div className="brand-name">NK Laundry</div>
@@ -33,7 +33,7 @@ const Header = ({ onBookNow, onLoginNow, userDetails, onContactUsClick, onAboutU
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="ms-auto" /> {/* Hamburger menu */}
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto">
-          <Nav.Link as={Link} to="/laundry_app" className='nav-link-custom'>Home</Nav.Link>
+          <Nav.Link as={Link} to="/" className='nav-link-custom'>Home</Nav.Link>
           <Nav.Link onClick={onContactUsClick} className='nav-link-custom'>Contact Us</Nav.Link>
           <Nav.Link onClick={onAboutUsClick} className='nav-link-custom'>About Us</Nav.Link>
           <Nav.Link as={Link} to="/orders" className='nav-link-custom'>All Orders</Nav.Link>

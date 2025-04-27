@@ -87,7 +87,7 @@ function App() {
         loginModalHandleClose={() => setLoginModalShow(false)}
       />
       <Routes>
-        <Route path="/laundry_app" element={
+        <Route path="/" element={
           <>
             <div className="d-flex align-items-center">
               {/* <img src={logo} style={{ height: '100px', marginRight: '10px' }} alt="Logo" /> */}
