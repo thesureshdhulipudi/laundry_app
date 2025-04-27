@@ -1,0 +1,123 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.home-page-image{
+  max-width: 100% !important;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.contact-section {
+  padding: 50px 20px;
+  background-color: #f8f9fa; /* Light gray background */
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+
+.contact-details {
+  margin-bottom: 20px;
+}
+
+.contact-details img {
+  margin-bottom: 20px;
+}
+
+.contact-details h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.contact-details p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.google-map iframe {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.about-section {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 60px 30px; /* Increased padding for better spacing */
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+
+.about-section h2 {
+  font-size: 32px; /* Larger font size for the heading */
+  font-weight: bold;
+  color: #333; /* Darker color for better contrast */
+  margin-bottom: 25px; /* Increased spacing below the heading */
+}
+
+.about-section p {
+  font-size: 18px; /* Slightly larger font size for readability */
+  line-height: 1.8; /* Increased line height for better spacing */
+  color: #555; /* Softer text color */
+  margin: 15px 0; /* Spacing between paragraphs */
+}
+
+.about-section strong {
+  color: #007bff; /* Highlighted color for important text */
+}
+
+.about-section {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom of the screen */
+  right: 20px; /* Distance from the right of the screen */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.whatsapp-button img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Make the icon circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.whatsapp-button img:hover {
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}

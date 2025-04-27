@@ -1,0 +1,45 @@
+/* Services.css */
+.services-section {
+    background-color: hsl(194, 77%, 60%); /* Light grey background */
+    border-radius: 10px; /* Rounded corners for the section */
+    padding: 0rem; /* Add padding around the section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+  }
+  
+  .hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hover-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card {
+    border-radius: 0.5rem; /* Rounded corners for cards */
+  }
+  
+  .border-info {
+    border-width: 2px; /* Thicker border */
+  }
+  
+  .bg-gradient {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  }
+  
+  .text-secondary {
+    color: #6c757d !important; /* Bootstrap secondary color for description text */
+  }
+  .our-services-main{
+    max-width: 100%;
+    border-radius: 2px;
+    border: 1px solid black;
+    margin: 40px;
+  }
+
+  .our-services-list{
+    border-radius: 2px;
+    border: 1px solid black;
+    margin: 40px;
+  }

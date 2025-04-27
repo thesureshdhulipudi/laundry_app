@@ -1,0 +1,13 @@
+
+
+.modal-header-centered {
+    display: flex;
+    justify-content: center;
+    /* max-width: 800px; */
+    color: green;
+  }
+
+  .custom-modal-width .modal-dialog {
+    max-width: 800px !important; /* Adjust the width as needed */
+    width: 100% !important;
+  }
